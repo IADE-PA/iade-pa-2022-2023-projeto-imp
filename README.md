@@ -67,7 +67,7 @@ Cada espaço de simulação contém um conjunto de partículas estacionárias e 
 
 Qualquer partícula do espaço pode ser selecionada para ser a partícula móvel, passando a ser considerada a sua velocidade inicial na simulação. Durante a simulação, a velocidade inicial das partículas estacionárias é ignorada.
 
-Para aprovação em Algoritmia e Programação, o trabalho tem que implementar as instruções descritas nas (instruções)(#instruções). Estas descrevem um conjunto de instruções com as quais os utilizadores, através do terminal, interagem com o programa. A interação deve seguir rigorosamente as regras descritas pela nas [instruções](#instruções), já que o trabalho será validado com recurso a conjunto de testes rigorosos. Serão disponibilizados testes de treino, semelhantes aos utilizados na validação
+Para aprovação em Algoritmia e Programação, o trabalho tem que implementar as instruções descritas nas [instruções](#instruções). Estas descrevem um conjunto de instruções com as quais os utilizadores, através do terminal, interagem com o programa. A interação deve seguir rigorosamente as regras descritas pela nas [instruções](#instruções), já que o trabalho será validado com recurso a conjunto de testes rigorosos. Serão disponibilizados testes de treino, semelhantes aos utilizados na validação
 
 ## Instruções
 
@@ -478,16 +478,16 @@ O projeto é avaliado com base em duas componentes: quantitativa (*A*), e qualit
 
 | Instrução | Peso |
 | --------- | :--: |
-|           |  2   |
-|           |  2   |
-|           |  2   |
-|           |  2   |
-|           |  2   |
-|           |  2   |
-|           |  2   |
-|           |  2   |
-|           |  2   |
-|           |  2   |
+| RJ        |  1   |
+| EJ        |  1   |
+| LJ        |  2   |
+| RE        |  2   |
+| EE        |  1   |
+| RP        |  2   |
+| AP        |  2   |
+| S         |  5   |
+| G         |  2   |
+| L         |  2   |
 
 A avaliação qualitativa irá considerar que existem várias formas de resolver o problema descrito, mas exige-se a utilização dos instrumentos e métodos apresentados na unidade curricular, nomeadamente:
 

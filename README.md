@@ -46,13 +46,13 @@ Existem dois tipos de partículas:
 A cada momento, $t$, a partícula móvel é caraterizada por:
 
 - $m$ - Massa, em kg, onde $m \in \mathbb{R}, m \geq 0$.
-- $q$ - Carga, em Coulomb, onde $q \in \mathbb{R}$.
+- $q$ - Carga, em Coulomb, onde $q \in \mathbb{Z}$.
 - $p_t = (x_t,y_t,z_t)$ - Coordenadas, em metros, onde $(x,y,z) \in \mathbb{R}^3$.
-- $v_t = (v_{x_t}$, $v_{y_t}$, $v_{z_t})$ - Velocidade, em metros por segundo, onde $v_{x_t}$, $v_{y_t}$, $v_{z_t} \in \mathbb{R}$.
-- $a_t = (a_{x_t}$, $a_{y_t}$, $a_{z_t})$ - Aceleração, em metros por segundo ao quadrado, onde $a_{x_t}$, $a_{y_t}$, $a_{z_t} \in \mathbb{R}$.
-- $Fg_t = (Fg_{x_t}$, $Fg_{y_t}$, $Fg_{z_t})$ - Força gravítica, em Newtons, onde $Fg_{x_t}$, $Fg_{y_t}$, $Fg_{z_t} \in \mathbb{R}$.
-- $Fe_t = (Fe_{x_t}$, $Fe_{y_t}$, $Fe_{z_t})$ - Força elétrica, em Newtons, onde $Fe_{x_t}$, $Fe_{y_t}$, $Fe_{z_t} \in \mathbb{R}$.
-- $F_t = (F_{x_t}$, $F_{y_t}$, $F_{z_t})$ - Força total, em Newtons, onde $F_{x_t}$, $F_{y_t}$, $F_{z_t} \in \mathbb{R}$. A força total é a soma da força gravítica e da força elétrica.
+- $v_t = (v_{x_t}, v_{y_t}, v_{z_t})$ - Velocidade, em metros por segundo, onde $v_{x_t}$, $v_{y_t}$, $v_{z_t} \in \mathbb{R}$.
+- $a_t = (a_{x_t}, a_{y_t}, a_{z_t})$ - Aceleração, em metros por segundo ao quadrado, onde $a_{x_t}, a_{y_t}, a_{z_t} \in \mathbb{R}$.
+- $Fg_t = (Fg_{x_t}, Fg_{y_t}, Fg_{z_t})$ - Força gravítica, em Newtons, onde $Fg_{x_t}, Fg_{y_t}, Fg_{z_t} \in \mathbb{R}$.
+- $Fe_t = (Fe_{x_t}, Fe_{y_t}, Fe_{z_t})$ - Força elétrica, em Newtons, onde $Fe_{x_t}, Fe_{y_t}, Fe_{z_t} \in \mathbb{R}$.
+- $F_t = (F_{x_t}, F_{y_t}, F_{z_t})$ - Força total, em Newtons, onde $F_{x_t}, F_{y_t}, F_{z_t} \in \mathbb{R}$. A força total é a soma da força gravítica e da força elétrica.
 
 Com base numa configuração do espaço, é possível efetuar várias simulações.  Uma simulação é definida por:
 
@@ -287,7 +287,7 @@ Saída com insucesso:
 
 Simula o movimento de todas as partículas registadas num espaço de simulação.
 
-`Nome` é um nome de um utilizador, `IdentificadorEspaço` é um identificador de espaço de simulação, `Tempo` é o tempo de simulação, `Passo` é o passo de simulação. `NomeFicheiro` é o nome do ficheiro onde será guardada a simulação no caso de sucesso. Se `NomeFicheiro` for igual a `-`, a simulação é apenas mostrada na consola.
+`Nome` é um nome de um utilizador, `IdentificadorEspaço` é um identificador de espaço de simulação, `IdentificadorParticula` é o identificador da partícula móvel, `Tempo` é o tempo de simulação, `Passo` é o passo de simulação. `NomeFicheiro` é o nome do ficheiro onde será guardada a simulação no caso de sucesso. Se `NomeFicheiro` for igual a `-`, a simulação é apenas mostrada na consola.
 
 A saída com sucesso é uma tabela com uma linha para cada instante de tempo, e uma coluna para cada variável. A primeira linha contém os nomes das variáveis. Em cada linha, os valores estão separados por vírgulas, sem espaços.
 
@@ -303,7 +303,7 @@ Para cada momento `t` da simulação, as variáveis são:
 
 Entrada:
 
-        S Nome IdentificadorEspaço
+        S Nome IdentificadorEspaço IdentificaorPartícula
         Tempo Passo
         NomeFicheiro
 

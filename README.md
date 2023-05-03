@@ -400,10 +400,10 @@ A ausência de identificação individual no ficheiro de relatório implica a an
 O código fonte entregue será sujeito a validação por um conjunto de testes reservado para esse efeito, e será compilado com a seguinte instrução:
 
 ```bash
-gcc main.c -o main
+make main
 ```
 
-A compilação deve gerar o programa `main` no diretório atual, que será executado com as instruções dos testes.
+A compilação deve gerar o programa `bin/main`, que será executado com as instruções dos testes.
 
 A entrega no *e-learning* corresponde a um ficheiro `zip` do repositório *GitHub Classroom*, excluindo eventuais ficheiros compilados.
 

@@ -27,8 +27,8 @@
 | Data                      | Evento                         |
 | ------------------------- | ------------------------------ |
 | 21/03/2023                | Disponibilização do enunciado. |
-| 21/05/2023 23:59:59       | Entrega final do trabalho.     |
-| 22/05/2023 --- 31/05/2023 | Provas de autoria.             |
+| 29/05/2023 23:59:59       | Entrega final do trabalho.     |
+| 31/05/2023 --- 02/06/2023 | Provas de autoria.             |
 
 ## Descrição
 

@@ -13,8 +13,6 @@
   - [Registar partícula (RP)](#registar-partícula-rp)
   - [Alterar partícula (AP)](#alterar-partícula-ap)
   - [Simular (S)](#simular-s)
-  - [Gravar (G)](#gravar-g)
-  - [Ler (L)](#ler-l)
 - [Estrutura do projeto](#estrutura-do-projeto)
 - [Testes de *input*/*output*](#testes-de-inputoutput)
   - [Utilização de testes](#utilização-de-testes)
@@ -329,46 +327,6 @@ Saída com insucesso:
 
         Parâmetros inválidos.
 
-### Gravar (G)
-
-Grava toda a informação do programa em ficheiro.
-
-`NomeFicheiro` é o nome do ficheiro onde será guardada a informação do programa.
-
-Entrada:
-
-        G NomeFicheiro
-
-Saída com sucesso:
-
-        Programa gravado com sucesso.
-
-Saída com insucesso:
-
-- Quando ocorre um erro na gravação:
-
-        Ocorreu um erro na gravação.
-
-### Ler (L)
-
-Lê a informação do programa de ficheiro.
-
-`NomeFicheiro` é o nome do ficheiro onde está guardada a informação do programa.
-
-Entrada:
-
-        L NomeFicheiro
-
-Saída com sucesso:
-
-        Programa carregado com sucesso.
-
-Saída com insucesso:
-
-- Quando ocorre um erro na leitura:
-
-        Ocorreu um erro no carregamento.
-
 ## Estrutura do projeto
 
 A estrutura mínima do projeto deve ser a seguinte:
@@ -478,16 +436,14 @@ O projeto é avaliado com base em duas componentes: quantitativa (*A*), e qualit
 
 | Instrução | Peso |
 | --------- | :--: |
-| RJ        |  1   |
-| EJ        |  1   |
+| RJ        |  2   |
+| EJ        |  2   |
 | LJ        |  2   |
 | RE        |  2   |
-| EE        |  1   |
+| EE        |  2   |
 | RP        |  2   |
 | AP        |  2   |
-| S         |  5   |
-| G         |  2   |
-| L         |  2   |
+| S         |  6   |
 
 A avaliação qualitativa irá considerar que existem várias formas de resolver o problema descrito, mas exige-se a utilização dos instrumentos e métodos apresentados na unidade curricular, nomeadamente:
 

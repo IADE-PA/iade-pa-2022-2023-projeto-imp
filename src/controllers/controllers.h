@@ -15,5 +15,6 @@ bool has_user(App app, char* name);
 
 void register_user(App app, char* name);
 
+char* register_space(App app, char* user_name);
 
 #endif

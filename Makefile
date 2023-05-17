@@ -13,6 +13,8 @@ CC=gcc
 CFLAGS=-Wall -Wextra -std=c99 -g
 # CFLAGS+=-Werror -pedantic
 
+LDLIBS=-lm
+
 main: src/main.c $(UTILS) $(MVC)
 	mkdir -p bin
-	$(CC) $(CFLAGS) -o bin/$@ $^
+	$(CC) $(CFLAGS) $^ -o bin/$@ $(LDLIBS)

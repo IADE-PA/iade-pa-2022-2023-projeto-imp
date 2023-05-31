@@ -20,6 +20,19 @@ void free_user(User user) {
     // TODO: Falta atualizar para os novos campos de User.
 }
 
+int user_num_spaces(User user) {
+    return hash_table_size(user->simulation_spaces);
+}
+
+int user_num_simulations(User user) {
+    // TODO: unimplemented function stub
+    return 0;
+}
+
+char* user_get_name(User user) {
+    return user->name;
+}
+
 Space new_space(char* space_id) {
     Space space = malloc(sizeof(tSpace));
     space->id = strdup(space_id);

@@ -18,6 +18,12 @@ User new_user(char* name);
 
 void free_user(User user);
 
+int user_num_spaces(User user);
+
+int user_num_simulations(User user);
+
+char* user_get_name(User user);
+
 Space new_space(char* space_id);
 
 void free_space(void* space);

@@ -83,18 +83,18 @@ int hash_table_size(HashTable htable);
 bool hash_table_is_empty(HashTable htable);
 
 /**
- * @brief Returns true iff the hash table contains no elements.
- * 
- * @param htable The hash table.
- * @return true iff the hash table contains no elements.
- */
-List hash_table_keys(HashTable htable);
-
-/**
  * @brief Returns the keys of the hash table.
  * 
  * @param htable The hash table.
  * @return List The keys of the hash table.
+ */
+List hash_table_keys(HashTable htable);
+
+/**
+ * @brief Returns the values of the hash table.
+ * 
+ * @param htable The hash table.
+ * @return List The values of the hash table.
  */
 List hash_table_values(HashTable htable);
 
